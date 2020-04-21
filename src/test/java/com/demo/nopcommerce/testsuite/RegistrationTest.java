@@ -75,10 +75,10 @@ public class RegistrationTest extends TestBase {
         //registerPage.selectFemaleGenderRadioButton();
 
         //send text to First Name field
-        registrationPage.sendTextToFirstNameField("Lucky");
+        registrationPage.enterTextToFirstNameField("Lucky");
 
         //send text to Last Name field
-        registrationPage.sendTextToLastNameField("mak");
+        registrationPage.enterTextToLastNameField("mak");
 
         //select day from DOB drop down menu
         registrationPage.selectDayDOBFromDropDownMenu("1");
@@ -90,19 +90,19 @@ public class RegistrationTest extends TestBase {
         registrationPage.selectYearDOBFromDropDownMenu("1980");
 
         //send text to Email field
-        registrationPage.sendTextToEmailField(email);
+        registrationPage.enterTextToEmailField(email);
 
         //send text to Company name field
-        registrationPage.sendTextToCompanyField("L M Test");
+        registrationPage.enterTextToCompanyField("L M Test");
 
         //check Newsletter checkbox is selected
         registrationPage.selectNewsLetterCheckBox();
 
         //send text to Password field
-        registrationPage.sendTextToPasswordField(password);
+        registrationPage.enterTextToPasswordField(password);
 
         //send text to Confirm password field
-        registrationPage.sendTextToConfirmPasswordField(password);
+        registrationPage.enterTextToConfirmPasswordField(password);
 
         //click Register button
         registrationPage.clickOnRegisterButton();
@@ -111,6 +111,5 @@ public class RegistrationTest extends TestBase {
         registrationCompletePage.verifyTextYourRegistrationCompleted("Your registration completed");
 
     }
-
 
 }

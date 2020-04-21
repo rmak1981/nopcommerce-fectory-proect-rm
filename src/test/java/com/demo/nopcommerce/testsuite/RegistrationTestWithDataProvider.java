@@ -4,9 +4,9 @@ import com.demo.nopcommerce.pages.HomePage;
 import com.demo.nopcommerce.pages.LoginPage;
 import com.demo.nopcommerce.pages.RegistrationCompletePage;
 import com.demo.nopcommerce.pages.RegistrationPage;
+import com.demo.nopcommerce.resources.testdata.TestData;
 import com.demo.nopcommerce.testbase.TestBase;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import static com.demo.nopcommerce.utility.UtilityRM.getRandomString;
@@ -37,9 +37,11 @@ public class RegistrationTestWithDataProvider extends TestBase {
     }
     //assigning random value for email every time test cases run
 
-    @Test(groups = {"Regression","Sanity","Smoke"})
-    public void userShouldRegisterSuccessfully(){
+    @Test(groups = {"Regression","Sanity","Smoke"}, dataProvider = "RegistrationCredential",dataProviderClass = TestData.class)
 
+    public void userShouldRegisterSuccessfully(String strFirstName,String strLastName,String day,String month,String year,String strCompanyName,String strPassword){
+        homePage.clickOnRegistrationLink();
+        registrationPage.fillTheRegistrationForm(strFirstName,strLastName,day,month,year,email,strCompanyName,strPassword,strPassword);
     }
 
 

@@ -79,14 +79,14 @@ public class RegistrationPage extends UtilityRM {
 
     }
 
-    public void sendTextToFirstNameField(String strFirstName) {
+    public void enterTextToFirstNameField(String strFirstName) {
         Reporter.log("enter firstname" + strFirstName + "to the field " + _firstNameField.toString() + "<br>");
         sendTextToElement(_firstNameField, strFirstName);
         log.info("enter firstname" + strFirstName + "to the field " + _firstNameField.toString());
 
     }
 
-    public void sendTextToLastNameField(String strLastName) {
+    public void enterTextToLastNameField(String strLastName) {
         Reporter.log("enter lastname" + strLastName + "to the field" + _lastNameField.toString() + "<br>");
         sendTextToElement(_lastNameField, strLastName);
         log.info("enter lastname" + strLastName + "to the field" + _lastNameField.toString());
@@ -110,13 +110,13 @@ public class RegistrationPage extends UtilityRM {
         log.info("selecct year" + _yearOfBirth.toString());
     }
 
-    public void sendTextToEmailField(String stremail) {
+    public void enterTextToEmailField(String stremail) {
         Reporter.log("enter email" + stremail + "to email filed" + _emailField.toString() + "<br>");
         sendTextToElement(_emailField, stremail);
         log.info("enter email" + stremail + "to email filed" + _emailField.toString());
     }
 
-    public void sendTextToCompanyField(String strCompanyName) {
+    public void enterTextToCompanyField(String strCompanyName) {
         Reporter.log("enter comapny name" + strCompanyName + "to company field" + _companyNameField.toString() + "<br>");
         sendTextToElement(_companyNameField, strCompanyName);
         log.info("enter comapny name" + strCompanyName + "to company field" + _companyNameField.toString());
@@ -128,22 +128,37 @@ public class RegistrationPage extends UtilityRM {
         log.info("select news letter box" + _newsLtrCheckBox.toString());
     }
 
-    public void sendTextToPasswordField(String strPassword) {
+    public void enterTextToPasswordField(String strPassword) {
         Reporter.log("enter password" + strPassword + "to field" + _passwordField.toString() + "<br>");
         sendTextToElement(_passwordField, strPassword);
         log.info("enter password" + strPassword + "to field" + _passwordField.toString());
     }
 
-    public void sendTextToConfirmPasswordField(String strConfPassword) {
-        Reporter.log("enter confirm passwrod" + strConfPassword + "to the field" + _confPasswordField.toString() + "<br>");
-        sendTextToElement(_confPasswordField, strConfPassword);
-        log.info("enter confirm passwrod" + strConfPassword + "to the field" + _confPasswordField.toString());
+    public void enterTextToConfirmPasswordField(String strPassword) {
+        Reporter.log("enter confirm passwrod" + strPassword + "to the field" + _confPasswordField.toString() + "<br>");
+        sendTextToElement(_confPasswordField, strPassword);
+        log.info("enter confirm passwrod" + strPassword + "to the field" + _confPasswordField.toString());
     }
 
     public void clickOnRegisterButton() {
         Reporter.log("click on register"+_registerBtn.toString()+"<br>");
         clickOnElement(_registerBtn);
         log.info("click on register"+_registerBtn.toString());
+    }
+    public void fillTheRegistrationForm(String firstName, String strFirstName, String strLastName, String day, String month, String year, String stremail, String strCompanyName, String strPassword){
+        enterTextToFirstNameField(strFirstName);
+        enterTextToLastNameField(strLastName);
+        selectDayDOBFromDropDownMenu(day);
+        selectMonthDOBFromDropDownMenu(month);
+        selectYearDOBFromDropDownMenu(year);
+        enterTextToEmailField(stremail);
+        enterTextToCompanyField(strCompanyName);
+        selectNewsLetterCheckBox();
+        enterTextToPasswordField(strPassword);
+        enterTextToConfirmPasswordField(strPassword);
+        clickOnRegisterButton();
+
+
     }
 
 

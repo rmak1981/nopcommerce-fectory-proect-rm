@@ -17,6 +17,7 @@ public class LoginTest extends TestBase {
 
     @BeforeMethod(groups = {"Regression", "Smoke", "Sanity"})
     public void setUp() {
+
         homePage = new HomePage();
         loginPage = new LoginPage();
     }

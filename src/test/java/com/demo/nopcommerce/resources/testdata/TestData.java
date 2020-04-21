@@ -9,18 +9,15 @@ import org.testng.annotations.DataProvider;
 public class TestData {
 
     // annotations data provider
-    @DataProvider (name = "LoginCredentials")
-    public Object[][] getLoginData(){
-    return new Object[][]{
-            {"abc@gmail.com","test123"},
-
-    };
-    }
-    @DataProvider(name = "RegistrationCredential")
-    public Object[][] getRegistrationData(){
+    @DataProvider(name = "LoginCredentials")
+    public Object[][] getLoginData() {
         return new Object[][]{
-
+                {"abc@gmail.com", "test123"},
         };
     }
-
+    @DataProvider(name = "RegistrationCredential")
+    public Object[][] getRegistrationData() {
+        return new Object[][]{{"Lucky", "mak", "1", "June", "1980", "Test", "test123"}
+        };
+    }
 }

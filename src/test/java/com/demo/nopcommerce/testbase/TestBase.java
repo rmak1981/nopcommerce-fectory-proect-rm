@@ -3,8 +3,6 @@ package com.demo.nopcommerce.testbase;
 import com.demo.nopcommerce.basepage.BasePage;
 import com.demo.nopcommerce.browserselector.BrowserSelector;
 import com.demo.nopcommerce.loadproperty.LoadProperty;
-import com.demo.nopcommerce.utility.UtilityRM;
-import org.apache.poi.ss.formula.functions.T;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 

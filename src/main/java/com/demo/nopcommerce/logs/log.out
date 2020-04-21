@@ -75,3 +75,17 @@
 2020-04-20 17:04:142 INFO  LoginPage :37 - Enter email:abc@gmail.com to email filed [[ChromeDriver: chrome on WINDOWS (11b6c5a5429fbaf11f749b29f66a0581)] -> css selector: input#Email]
 2020-04-20 17:04:836 INFO  LoginPage :42 - Enter Passwrodabc123 to password field [[ChromeDriver: chrome on WINDOWS (11b6c5a5429fbaf11f749b29f66a0581)] -> css selector: input.password]
 2020-04-20 17:04:551 INFO  LoginPage :47 - click on Login Submit Btn[[ChromeDriver: chrome on WINDOWS (11b6c5a5429fbaf11f749b29f66a0581)] -> css selector: input.button-1.login-button]
+2020-04-21 10:04:532 INFO  BrowserSelector :25 - Launching Chrome Browser
+2020-04-21 10:04:361 INFO  HomePage :29 - clicking on login link[[ChromeDriver: chrome on WINDOWS (80022e624f55bb53765cd1012ab97a27)] -> xpath: //a[@class='ico-login']]
+2020-04-21 10:04:879 INFO  LoginPage :37 - Enter email:abc@gmail.com to email filed [[ChromeDriver: chrome on WINDOWS (80022e624f55bb53765cd1012ab97a27)] -> css selector: input#Email]
+2020-04-21 10:04:60 INFO  LoginPage :42 - Enter Passwrodtest123 to password field [[ChromeDriver: chrome on WINDOWS (80022e624f55bb53765cd1012ab97a27)] -> css selector: input.password]
+2020-04-21 10:04:331 INFO  LoginPage :47 - click on Login Submit Btn[[ChromeDriver: chrome on WINDOWS (80022e624f55bb53765cd1012ab97a27)] -> css selector: input.button-1.login-button]
+2020-04-21 11:04:704 INFO  BrowserSelector :25 - Launching Chrome Browser
+2020-04-21 11:04:397 INFO  HomePage :34 - cliking on registration link[[ChromeDriver: chrome on WINDOWS (27873ccbf829b880dd49a40104d4bd42)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 11:04:888 INFO  RegistrationPage :85 - enter firstnamemakto the field [[ChromeDriver: chrome on WINDOWS (27873ccbf829b880dd49a40104d4bd42)] -> xpath: //input[@id='FirstName']]
+2020-04-21 11:04:98 INFO  RegistrationPage :92 - enter lastname1to the field[[ChromeDriver: chrome on WINDOWS (27873ccbf829b880dd49a40104d4bd42)] -> xpath: //input[@id='LastName']]
+2020-04-21 17:04:792 INFO  BrowserSelector :25 - Launching Chrome Browser
+2020-04-21 17:04:854 INFO  HomePage :29 - clicking on login link[[ChromeDriver: chrome on WINDOWS (16bd4492e078e114d0f52f9388bacc19)] -> xpath: //a[@class='ico-login']]
+2020-04-21 17:04:191 INFO  LoginPage :37 - Enter email:abc@gmail.com to email filed [[ChromeDriver: chrome on WINDOWS (16bd4492e078e114d0f52f9388bacc19)] -> css selector: input#Email]
+2020-04-21 17:04:373 INFO  LoginPage :42 - Enter Passwrodtest123 to password field [[ChromeDriver: chrome on WINDOWS (16bd4492e078e114d0f52f9388bacc19)] -> css selector: input.password]
+2020-04-21 17:04:676 INFO  LoginPage :47 - click on Login Submit Btn[[ChromeDriver: chrome on WINDOWS (16bd4492e078e114d0f52f9388bacc19)] -> css selector: input.button-1.login-button]

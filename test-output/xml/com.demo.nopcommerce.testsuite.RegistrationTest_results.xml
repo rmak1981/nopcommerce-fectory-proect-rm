@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Registration Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="27.206">
+  <properties />
+  
+  
+            <testcase name="userShouldRegisterSuccessfullyAndLoginUsingSameCredentials" time="25.922" classname="com.demo.nopcommerce.testsuite.RegistrationTest" />
+                <testcase name="userShouldNavigateToRegisterPageSuccessfully" time="1.284" classname="com.demo.nopcommerce.testsuite.RegistrationTest" />
+      
+</testsuite>

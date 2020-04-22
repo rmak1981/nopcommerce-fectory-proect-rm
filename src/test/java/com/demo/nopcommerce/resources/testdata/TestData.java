@@ -17,7 +17,7 @@ public class TestData {
     }
     @DataProvider(name = "RegistrationCredential")
     public Object[][] getRegistrationData() {
-        return new Object[][]{{"Lucky", "mak", "1", "June", "1980", "Test", "test123"}
+        return new Object[][]{{ "Lucky", "mak", "1", "May", "1980", "Test", "test123"}
         };
     }
 }

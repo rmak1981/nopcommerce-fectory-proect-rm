@@ -110,10 +110,10 @@ public class RegistrationPage extends UtilityRM {
         log.info("selecct year" + _yearOfBirth.toString());
     }
 
-    public void enterTextToEmailField(String stremail) {
-        Reporter.log("enter email" + stremail + "to email filed" + _emailField.toString() + "<br>");
-        sendTextToElement(_emailField, stremail);
-        log.info("enter email" + stremail + "to email filed" + _emailField.toString());
+    public void enterTextToEmailField(String email) {
+        Reporter.log("enter email" + email + "to email filed" + _emailField.toString() + "<br>");
+        sendTextToElement(_emailField, email);
+        log.info("enter email" + email + "to email filed" + _emailField.toString());
     }
 
     public void enterTextToCompanyField(String strCompanyName) {
@@ -145,13 +145,13 @@ public class RegistrationPage extends UtilityRM {
         clickOnElement(_registerBtn);
         log.info("click on register"+_registerBtn.toString());
     }
-    public void fillTheRegistrationForm(String firstName, String strFirstName, String strLastName, String day, String month, String year, String stremail, String strCompanyName, String strPassword){
+    public void fillTheRegistrationForm(String strFirstName,  String strLastName, String day, String month, String year, String email, String strCompanyName, String strPassword){
         enterTextToFirstNameField(strFirstName);
         enterTextToLastNameField(strLastName);
         selectDayDOBFromDropDownMenu(day);
         selectMonthDOBFromDropDownMenu(month);
         selectYearDOBFromDropDownMenu(year);
-        enterTextToEmailField(stremail);
+        enterTextToEmailField(email);
         enterTextToCompanyField(strCompanyName);
         selectNewsLetterCheckBox();
         enterTextToPasswordField(strPassword);

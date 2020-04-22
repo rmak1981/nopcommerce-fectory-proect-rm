@@ -25,7 +25,7 @@ public class RegistrationTest extends TestBase {
     RegistrationPage registrationPage;
     RegistrationCompletePage registrationCompletePage;
 
-    @BeforeMethod(groups = {"Regression", "Smoke", "Sanity"})
+    @BeforeMethod(groups = {"Regression", "Smoke","Smoke"})
     public void setUp() {
         homePage = new HomePage();
         loginPage = new LoginPage();
@@ -33,7 +33,7 @@ public class RegistrationTest extends TestBase {
         registrationCompletePage = new RegistrationCompletePage();
     }
     //assigning random value for email every time test cases run
-    @BeforeTest(groups = {"Regression","Sanity","Smoke"})
+    @BeforeTest(groups = {"Regression","Sanity"})
     public static void setUp1() {
         email = "xyz" + getRandomString(5) + "@gmail.com";
     }
@@ -45,7 +45,7 @@ public class RegistrationTest extends TestBase {
       Message   “Your Personal Details“
       Assert above message.
     */
-    @Test(priority = 0,groups = {"Sanity","Regression"})
+    @Test(priority = 0,groups = {"Regression","Sanity"})
     public void userShouldNavigateToRegisterPageSuccessfully() {
         //click on Register link on HomePage
         homePage.clickOnRegistrationLink();

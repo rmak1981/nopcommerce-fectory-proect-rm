@@ -20,4 +20,9 @@
             <class name="com.demo.nopcommerce.testsuite.LoginTest"/>
         </classes>
     </test>
+    <test name="Registration Test" >
+        <classes>
+            <class name="com.demo.nopcommerce.testsuite.RegistrationTest"/>
+        </classes>
+    </test>
 </suite>

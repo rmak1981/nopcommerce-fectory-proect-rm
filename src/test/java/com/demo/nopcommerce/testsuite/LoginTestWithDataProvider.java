@@ -18,13 +18,13 @@ public class LoginTestWithDataProvider extends TestBase {
     HomePage homePage;
     LoginPage loginPage;
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"Regression"})
     public void setUp() {
         homePage = new HomePage();
         loginPage = new LoginPage();
     }
 
-    @Test ( dataProvider = "LoginCredentials", dataProviderClass = TestData.class)
+    @Test (priority = 0,groups = {"Regression","smoke","sanity"},dataProvider = "LoginCredentials", dataProviderClass = TestData.class)
     public void doLogin(String username,String password){
         homePage.clickOnLoginLink();
         loginPage.loginToApplication(username,password);
